@@ -7,7 +7,6 @@ calculator program yourself in this file.
 
 from arithmetic_again import *
 
-nums = []
 # Your code goes here
 
 
@@ -21,25 +20,25 @@ def calculate():
     """
 
     while True:
-        calculation = raw_input(">  ")
-        nums = calculation.split(" ")
+        user_input = raw_input(">  ")
+        nums = user_input.split(" ")
         if nums[0] == "q" or nums[0] == "Q":
             break
         elif nums[0] == "+":
-            print add(int(nums[1]), int(nums[2]))
+            print add()
         elif nums[0] == "-":
-            print add(int(nums[1]), int(nums[2]))
+            print add()
         elif nums[0] == "*":
-            print multiply(int(nums[1]), int(nums[2]))
+            print multiply()
         elif nums[0] == "/":
-            print divide(float(nums[1]), float(nums[2]))
+            print divide()
         elif nums[0] == "square":
-            print square(int(nums[1]))
+            print square()
         elif nums[0] == "cube":
-            print cube(int(nums[1]))
+            print cube()
         elif nums[0] == "power":
-            print power(int(nums[1]), int(nums[2]))
+            print power()
         elif nums[0] == "mod":
-            print mod(int(nums[1]), int(nums[2]))
+            print mod()
 
 calculate()
